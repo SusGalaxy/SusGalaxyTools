@@ -1,0 +1,62 @@
+#!/bin/bash
+software="\nWelcome to Sus Galaxy Tools | v1 beta\n"
+
+clear
+echo -e "Welcome to Sus Galaxy Tools | v1 beta\n"
+
+echo -e "[1] \033[32mTest - When you press 1 and enter then you can see are working. If nothing, then don't work.\033[0m"
+echo -e "[2] \033[32mVideos - You can watch vidoes with terminal or gui!\033[0m"
+
+read -p "Enter number: " choice
+
+if [ "$choice" == "1" ]; then
+  echo -e "It's working!"
+fi
+
+if [ "$choice" == "2" ]; then
+  clear
+  echo -e "$software"
+  echo -e "Videos:"
+  echo -e "[1] \033[32mRick Roll (Terminal Only)\033[0m"
+  echo -e "[2] \033[32mBad Apple (Terminal Only)\033[0m"
+  read -p "Enter number: " choice2
+
+  if [ "$choice2" == "1" ]; then
+    clear
+    echo -e "$software"
+    echo -e "There is requird for internet, do you want start?"
+    echo -e "[1] \033[32mYes\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    read -p "Enter number: " choice5
+    if [ "$choice5" == "1" ]; then
+      curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+    fi
+  fi
+  if [ "$choice2" == "2" ]; then
+    clear
+    echo -e "$software"
+    echo -e "Would you install 9.85 MB of Size?"
+    echo -e "[1] \033[32mYes (Internet + Node.js Requird)\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    echo -e "[3] \033[32mAlready Installed\033[0m"
+    read -p "Enter number: " choice3
+    if [ "$choice3" == "1" ]; then
+    npm i -g bad-apple
+    clear
+    echo -e "$software"
+    echo -e "Successful installed, Do you want start bad apple?"
+    echo -e "[1] \033[32mYes\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    read -p "Enter number: " choice4
+    fi
+    if [ "$choice4" == "1" ]; then
+      bad-apple
+    fi
+    if [ "$choice3" == "3" ]; then
+      bad-apple
+    fi
+    if [ "$choice3" == "3" ]; then
+      bad-apple
+    fi
+  fi
+fi
