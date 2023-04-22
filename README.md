@@ -4,6 +4,9 @@ Sus Galaxy Tools is free and Open Source
 ### Install
 Coming Soon
 
+### Review
+- [Sus Galaxy Tools v1 Beta | Youtube](https://youtu.be/dBxiShFQ0Xs)
+
 ### Supported Operating System
 ![image](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
 ![image](https://img.shields.io/badge/Zorin%20OS-0CC1F3?style=for-the-badge&logo=zorin&logoColor=white)
