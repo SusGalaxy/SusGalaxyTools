@@ -1,5 +1,5 @@
 # Sus Galaxy Tools
-Sus Galaxy Tools is free and Open Source
+Sus Galaxy Tools is free and Open Source. It's amazing tools!
 
 ### Install
 ```
