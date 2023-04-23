@@ -1,12 +1,14 @@
 <div align="center">
 <h1>Sus Galaxy Tools</h1>
 <h4>Sus Galaxy Tools is free and Open Source. It's amazing tools!</h4>
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SusGalaxy/SusGalaxyTools?color=a&label=Version">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/SusGalaxy/SusGalaxyTools/total?color=blue&label=Downloads">
 </div>
 
 ### Install & Run
 ```
 # Install Sus Galaxy Tools on your linux (if using windows, use WSL)
-wget https://raw.githubusercontent.com/SusGalaxy/SusGalaxyTools/main/version/v1/susgalaxytools
+git clone https://github.com/SusGalaxy/SusGalaxyTools.git && cd ./SusGalaxyTools/version/v1
 
 # Run If using sudo, you can use this command
 sudo bash susgalaxytools
