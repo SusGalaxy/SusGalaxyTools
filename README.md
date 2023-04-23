@@ -16,7 +16,7 @@ bash susgalaxytools
 ```
 
 ### Review
-- [Sus Galaxy Tools v1 Beta | Youtube](https://youtu.be/dBxiShFQ0Xs)
+- [Youtube Video](https://youtu.be/dBxiShFQ0Xs)
 
 ### Supported Operating System
 ![image](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
