@@ -6,10 +6,10 @@ Sus Galaxy Tools is free and Open Source. It's amazing tools!
 # Install Sus Galaxy Tools on your linux (if using windows, use WSL)
 wget https://raw.githubusercontent.com/SusGalaxy/SusGalaxyTools/main/version/v1-beta/susgalaxytools
 
-# If using sudo, you can use this command
+# Run If using sudo, you can use this command
 sudo bash susgalaxytools
 
-# If using root without sudo, you can use this command
+# Run If using root without sudo, you can use this command
 bash susgalaxytools
 ```
 
