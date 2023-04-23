@@ -6,7 +6,7 @@
 ### Install & Run
 ```
 # Install Sus Galaxy Tools on your linux (if using windows, use WSL)
-wget https://raw.githubusercontent.com/SusGalaxy/SusGalaxyTools/main/version/v1-beta/susgalaxytools
+wget https://raw.githubusercontent.com/SusGalaxy/SusGalaxyTools/main/version/v1/susgalaxytools
 
 # Run If using sudo, you can use this command
 sudo bash susgalaxytools
