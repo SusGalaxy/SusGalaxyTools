@@ -1,7 +1,7 @@
 # Sus Galaxy Tools
 Sus Galaxy Tools is free and Open Source. It's amazing tools!
 
-### Install
+### Install & Run
 ```
 # Install Sus Galaxy Tools on your linux (if using windows, use WSL)
 wget https://raw.githubusercontent.com/SusGalaxy/SusGalaxyTools/main/version/v1-beta/susgalaxytools
