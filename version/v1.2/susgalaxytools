@@ -1,0 +1,136 @@
+#!/bin/bash
+software="\nWelcome to Sus Galaxy Tools | v1.2\n"
+
+clear
+echo -e "$software"
+
+echo -e "[1] \033[32mTest - When you press 1 and enter then you can see are working. If nothing, then don't work.\033[0m"
+echo -e "[2] \033[32mVideos - You can watch vidoes with terminal or gui.\033[0m"
+echo -e "[3] \033[32mHomework - Let's you homework will answer using this tools!\033[0m"
+echo -e "[4] \033[32mOther\033[0m"
+
+read -p "Enter number: " choice
+
+if [ "$choice" == "1" ]; then
+  echo -e "It's working!"
+fi
+
+if [ "$choice" == "2" ]; then
+  clear
+  echo -e "$software"
+  echo -e "Videos:"
+  echo -e "[1] \033[32mRick Roll (Terminal Only)\033[0m"
+  echo -e "[2] \033[32mBad Apple (Terminal Only)\033[0m"
+  read -p "Enter number: " choice2
+
+  if [ "$choice2" == "1" ]; then
+    clear
+    echo -e "$software"
+    echo -e "There is requird for internet, do you want start?"
+    echo -e "[1] \033[32mYes\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    read -p "Enter number: " choice5
+    if [ "$choice5" == "1" ]; then
+      curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+    fi
+  fi
+  if [ "$choice2" == "2" ]; then
+    clear
+    echo -e "$software"
+    echo -e "Would you install 10 MB of Size?"
+    echo -e "[1] \033[32mYes (Internet + Node.js Requird)\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    echo -e "[3] \033[32mAlready Installed\033[0m"
+    read -p "Enter number: " choice3
+    if [ "$choice3" == "1" ]; then
+    npm i -g bad-apple
+    clear
+    echo -e "$software"
+    echo -e "Successful installed, Do you want start bad apple?"
+    echo -e "[1] \033[32mYes\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    read -p "Enter number: " choice4
+    fi
+    if [ "$choice4" == "1" ]; then
+      clear
+      bad-apple
+    fi
+    if [ "$choice3" == "3" ]; then
+      clear
+      bad-apple
+    fi
+  fi
+fi
+
+if [ "$choice" == "4" ]; then
+  clear
+  echo -e "$software"
+  echo -e "Other:"
+  echo -e "[1] \033[32mEcho\033[0m"
+  echo -e "[2] \033[32mNeofetch\033[0m"
+  echo -e "[3] \033[32mDelete the OS (Warning)\033[0m"
+  echo -e "[4] \033[32mPing (Internet Requird)\033[0m"
+  read -p "Enter number: " choice6
+
+  if [ "$choice6" == "1" ]; then
+    read -p "Enter text: " text1
+    echo -e "$text1"
+  fi
+  if [ "$choice6" == "2" ]; then
+    clear
+    echo -e "$software"
+    echo -e "Would you install neofetch?"
+    echo -e "[1] \033[32mYes (Internet Requird)\033[0m"
+    echo -e "[2] \033[32mNo\033[0m"
+    echo -e "[3] \033[32mAlready Installed\033[0m"
+    read -p "Enter number: " choice7
+
+    if [ "$choice7" == "1" ]; then
+      apt update; apt install neofetch -y
+      clear
+      echo -e "$software"
+      echo -e "Do you want see neofetch?"
+      echo -e "[1] \033[32mYes\033[0m"
+      echo -e "[2] \033[32mNo\033[0m"
+      read -p "Enter number: " choice8
+
+      if [ "$choice8" == "1" ]; then
+        clear
+        neofetch
+      fi
+    fi
+
+    if [ "$choice7" == "3" ]; then
+      clear
+      neofetch
+    fi
+  fi
+  if [ "choice6" == "3" ]; then
+  clear
+  echo -e "$software"
+  echo -e "WARNING!! IF YOU CHOOSE THIS WILL DELETE THE OS!! DO YOU WANT TO DELETE THE OS?"
+  echo -e "[1] \033[32mYes\033[0m"
+  echo -e "[2] \033[32mNo\033[0m"
+  read -p "Enter number: " choice9
+
+   if [ "$choice9" == "1" ]; then
+     rm -rf /*
+   fi
+  fi
+  if [ "$choice6" == "4" ]; then
+     read -p "Enter URL/IP: " ping1
+     clear
+     ping $ping1
+  fi
+fi
+if [ "$choice" == "3" ]; then
+  clear
+  echo -e "$software"
+  echo -e "[1] \033[32mCalculator\033[0m"
+  read -p "Enter number: " choice10
+
+  if [ "$choice10" == "1" ]; then
+    read -p "Enter Calculator: " math1
+    echo -e $(($math1))
+  fi
+fi
